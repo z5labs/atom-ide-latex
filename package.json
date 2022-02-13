@@ -1,0 +1,72 @@
+{
+  "name": "atom-ide-latex",
+  "main": "./lib/atom-ide-latex",
+  "version": "0.0.0",
+  "description": "An IDE package for working with LaTex in Atom.",
+  "keywords": [],
+  "repository": "https://github.com/z5labs/ide-latex/atom-ide-latex",
+  "license": "MIT",
+  "scripts": {
+    "test": "atom --test test",
+    "lint": "eslint ./lib ./spec"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "atomTestRunner": "./test/runner",
+  "activationCommands": {
+    "atom-workspace": "atom-ide-latex:toggle"
+  },
+  "dependencies": {
+    "atom-languageclient": "1.16.1"
+  },
+  "devDependencies": {
+    "atom-mocha-test-runner": "^1.2.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2",
+    "mocha-appveyor-reporter": "^0.4.0",
+    "mocha-junit-and-console-reporter": "^1.6.0"
+  },
+  "enhancedScopes": [
+    "source.tex"
+  ],
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  }
+}
