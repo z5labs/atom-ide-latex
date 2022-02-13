@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "An IDE package for working with LaTex in Atom.",
   "keywords": [],
-  "repository": "https://github.com/z5labs/ide-latex/atom-ide-latex",
+  "repository": "https://github.com/z5labs/atom-ide-latex",
   "license": "MIT",
   "scripts": {
     "test": "atom --test test",
